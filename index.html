@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .col {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      label {
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+      .input-header {
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      .header-number {
+        text-align: right;
+        margin-bottom: 0px;
+      }
+      .input-row {
+        margin-top: 15px;
+      }
+      .header-row {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-style: solid;
+        border-width: 0px;
+        border-bottom-width: 1px;
+        border-bottom-color: rgb(128, 128, 128);
+      }
+      .small-split {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: 0px;
+        border-bottom-width: 1px;
+        border-bottom-color: rgb(128, 128, 128);
+        width: 600px;
+        justify-content: center;
+      }
+      .form-control {
+        width: 100%;
+      }
+
+      .button {
+        appearance: none;
+        outline: 0;
+        background-color: #2e946a;
+        border: 0;
+        padding: 10px 15px;
+        color: #ffffff;
+        border-radius: 3px;
+        width: 250px;
+        cursor: pointer;
+        font-size: 18px;
+        transition-duration: 0.25s;
+      }
+      .button:hover {
+        background-color: rgb(83, 189, 109);
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form-fields">
+      <div class="container">
+        <div class="row header-row">
+          <div class="col-3"><h4 class="header-number">1:</h4></div>
+          <div class="col-9">
+            <h5 class="input-header">General Information</h5>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col">
+            <label style="text-align: left; float: right">
+              Name of Insured
+              <input id="bro" class="form-control" />
+            </label>
+          </div>
+          <div class="col" style="text-align: left">
+            <label>
+              Address of Principle Office
+              <input class="form-control" />
+            </label>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: right">
+          <div class="col">
+            <label style="text-align: left">
+              Postal Address
+              <input class="form-control" />
+            </label>
+          </div>
+          <div class="col" style="text-align: left">
+            <label>
+              Date of Establishment
+              <input class="form-control" />
+            </label>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: right">
+          <div class="col">
+            <label style="text-align: left">
+              E-mail address
+              <input class="form-control" />
+            </label>
+          </div>
+          <div class="col" style="text-align: left"></div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: right">
+          <div class="col-6">
+            <label style="text-align: left">
+              Is/are the firm(s) or any principle or director a member of a
+              consortium, joint venture, single project partnership or group
+              practice?
+            </label>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <div class="radio">
+              <label style="margin-right: 10px"
+                ><input type="radio" /> Yes</label
+              >
+              <label><input type="radio" /> No</label>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <label style="text-align: left">
+              If 'YES', please supply details:
+            </label>
+            <textarea
+              rows="4"
+              class="form-control"
+              style="text-align: left"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row small-split"></div>
+        <div class="row justify-content-center" style="text-align: right">
+          <div class="col-6">
+            <label style="text-align: left">
+              Does the firm(s) or any principal, partner or director carry out
+              any work on behalf of any other businessin which they have a
+              controlling or financial interest (other than as a shareholder in
+              a public quoted company)?
+            </label>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <div class="radio">
+              <label style="margin-right: 10px"
+                ><input type="radio" /> Yes</label
+              >
+              <label><input type="radio" /> No</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <label style="text-align: left">
+              If 'Yes', please supply details:
+            </label>
+            <textarea
+              rows="4"
+              class="form-control"
+              style="text-align: left"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <label style="text-align: left">
+              Estimated Turnover
+            </label>
+            <input
+              class="form-control"
+              style="text-align: left"
+            ></input>
+            <label style="text-align: left">
+                Previous Year Turnover
+              </label>
+              <input
+                class="form-control"
+                style="text-align: left"
+              ></input>
+              <label style="text-align: left">
+                Next Year Expected Turnover
+              </label>
+              <input
+                class="form-control"
+                style="text-align: left"
+              ></input>
+              <label style="text-align: left">
+                Largest single contract/fee (only applicable if PI Cover is required):
+              </label>
+              <input
+                class="form-control"
+                style="text-align: left"
+              ></input>
+          </div>
+        </div>
+
+        <div class="row header-row" style="margin-top: 50px">
+          <div class="col-3"><h4 class="header-number">2:</h4></div>
+          <div class="col-9">
+            <h5 class="input-header">Staff and Partners</h5>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <label style="text-align: left; margin-bottom: 20px">
+              Please give details of Principals, Partners or Directors [TAKE THIS OUT I GUESS]:
+            </label>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <label style="text-align: left; margin-top: 20px">
+              Please give details of number of permanent staff in current
+              business:
+            </label>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <label style="text-align: left">
+              Principals/Partners/Directors
+            </label>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col">
+            <label style="text-align: left; float: right">
+              Full Time
+              <input class="form-control" />
+            </label>
+          </div>
+          <div class="col" style="text-align: left">
+            <label>
+              Part Time
+              <input class="form-control" />
+            </label>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <label style="text-align: left"> Professionally Qualified </label>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col">
+            <label style="text-align: left; float: right">
+              Full Time
+              <input class="form-control" />
+            </label>
+          </div>
+          <div class="col" style="text-align: left">
+            <label>
+              Part Time
+              <input class="form-control" />
+            </label>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <label style="text-align: left"> All Others </label>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col">
+            <label style="text-align: left; float: right">
+              Full Time
+              <input class="form-control" />
+            </label>
+          </div>
+          <div class="col" style="text-align: left">
+            <label>
+              Part Time
+              <input class="form-control" />
+            </label>
+          </div>
+        </div>
+        <div class="row small-split"></div>
+
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <label style="text-align: left">
+              Does the firm(s) use specialist designers, consultants or
+              sub-contractors?
+            </label>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <div class="radio">
+              <label style="margin-right: 10px"
+                ><input type="radio" /> Yes</label
+              >
+              <label><input type="radio" /> No</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <label> If 'Yes' please answer the following: </label>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col">
+            <label style="text-align: left; float: right">
+              Firm subcontracting proportion
+              <input class="form-control" placeholder="%" />
+            </label>
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-6" style="text-align: left">
+            <div class="radio">
+              <label>
+                Does the firm(s) insist that the specialist designers /
+                consultants / sub-contactors maintain their own PI cover?
+              </label>
+              <label style="margin-right: 10px">
+                <input type="radio" /> Yes
+              </label>
+              <label> <input type="radio" /> No </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col" style="max-width: 555px">
+            <label>
+              What services does the firm(s) use the specialist designers /
+              consultants / sub-contractors for?
+            </label>
+            <input class="form-control" />
+          </div>
+        </div>
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col" style="max-width: 555px">
+            <label>
+              How does the firm(s) select and manage the specialist designers /
+              consultants / sub-contractors?
+            </label>
+            <input class="form-control" />
+          </div>
+        </div>
+        <div class="row small-split"></div>
+        <div class="row justify-content-center">
+          <div class="col-6" style="text-align: left">
+            <div class="radio">
+              <label>
+                Is Cover required for the professional activities of any
+                principal, partner or director prior to joining the business?
+              </label>
+              <label style="margin-right: 10px">
+                <input type="radio" /> Yes
+              </label>
+              <label> <input type="radio" /> No </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="text-align: left">
+          <div class="col-6">
+            <label> If 'Yes', please supply details: </label>
+            <textarea
+              rows="4"
+              class="form-control"
+              style="text-align: left"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 20px; margin-bottom: 20px">
+          <div class="col" style="text-align: center">
+            <button class="button" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
